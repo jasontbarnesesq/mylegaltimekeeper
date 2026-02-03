@@ -841,15 +841,21 @@
             <div class="settings-section">
                 <h3>About</h3>
                 <p style="margin-bottom: 8px;"><strong>Voice Time Tracker v1.0</strong></p>
-                <p>A conversational time tracking tool for capturing billable hours through voice or manual entry.</p>
+                <p style="margin-bottom: 15px;">A conversational time tracking tool for capturing billable hours through voice or manual entry.</p>
+                
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="./Privacy_Policy.html" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;">Privacy Policy</a>
+                    <span style="color: #e0e0e0;">|</span>
+                    <a href="./Terms_of_Service.html" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;">Terms of Service</a>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
         // Google Drive API Configuration
-        const GOOGLE_CLIENT_ID = '793659536177-g3e47i0ckqsi7fvun2ntps35dr4h2is1.apps.googleusercontent.com'; // User will need to replace this
-        const GOOGLE_API_KEY = 'AIzaSyBk5AOK9D6t74DVymhOqC-RT53QYpdsjw0'; // User will need to replace this
+        const GOOGLE_CLIENT_ID = 'YOUR_CLIENT_ID_HERE'; // User will need to replace this
+        const GOOGLE_API_KEY = 'YOUR_API_KEY_HERE'; // User will need to replace this
         const GOOGLE_DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
         const GOOGLE_SCOPES = 'https://www.googleapis.com/auth/drive.file';
 
@@ -1539,7 +1545,7 @@
         // Google Drive Functions
         function initGoogleDrive() {
             // Check if API credentials are configured
-            if (GOOGLE_CLIENT_ID === '793659536177-g3e47i0ckqsi7fvun2ntps35dr4h2is1.apps.googleusercontent.com' || GOOGLE_API_KEY === 'AIzaSyBk5AOK9D6t74DVymhOqC-RT53QYpdsjw0') {
+            if (GOOGLE_CLIENT_ID === 'YOUR_CLIENT_ID_HERE' || GOOGLE_API_KEY === 'YOUR_API_KEY_HERE') {
                 console.log('Google Drive API credentials not configured');
                 isGoogleDriveReady = false;
                 return;
@@ -1688,6 +1694,10 @@ Google Drive Setup Instructions:
    - YOUR_CLIENT_ID_HERE with your Client ID
    - YOUR_API_KEY_HERE with your API Key
 10. Commit and push to GitHub
+
+For OAuth verification, you may need:
+- Privacy Policy: https://jasontbarnesesq.github.io/mylegaltimekeeper/Privacy_Policy.html
+- Terms of Service: https://jasontbarnesesq.github.io/mylegaltimekeeper/Terms_of_Service.html
 
 After setup, refresh the page and toggle Google Drive integration.
             `;
