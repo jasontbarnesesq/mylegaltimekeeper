@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="sklC60cKSfhgJmFUzTEWW5sTo4Ra6d4JAReOwKg-Xds" />
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Time Tracker">
@@ -1009,8 +1009,8 @@
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Google Drive API Configuration
-        const GOOGLE_CLIENT_ID = '793659536177-g3e47i0ckqsi7fvun2ntps35dr4h2is1.apps.googleusercontent.com'; // User will need to replace this
-        const GOOGLE_API_KEY = 'AIzaSyBk5AOK9D6t74DVymhOqC-RT53QYpdsjw0'; // User will need to replace this
+        const GOOGLE_CLIENT_ID = '793659536177-g3e47i0ckqsi7fvun2ntps35dr4h2is1.apps.googleusercontent.com';
+        const GOOGLE_API_KEY = 'AIzaSyBk5AOK9D6t74DVymhOqC-RT53QYpdsjw0';
         const GOOGLE_DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
         const GOOGLE_SCOPES = 'https://www.googleapis.com/auth/drive.file';
 
@@ -1712,7 +1712,7 @@
         // Google Drive Functions
         function initGoogleDrive() {
             // Check if API credentials are configured
-            if (GOOGLE_CLIENT_ID === '793659536177-g3e47i0ckqsi7fvun2ntps35dr4h2is1.apps.googleusercontent.com' || GOOGLE_API_KEY === 'AIzaSyBk5AOK9D6t74DVymhOqC-RT53QYpdsjw0') {
+            if (GOOGLE_CLIENT_ID === 'YOUR_CLIENT_ID_HERE' || GOOGLE_API_KEY === 'YOUR_API_KEY_HERE') {
                 console.log('Google Drive API credentials not configured');
                 isGoogleDriveReady = false;
                 return;
