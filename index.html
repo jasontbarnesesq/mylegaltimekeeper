@@ -1008,6 +1008,13 @@
     </div>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Define startApp function immediately so it's available for the landing page button
+        function startApp() {
+            document.getElementById('landingPage').style.display = 'none';
+            document.getElementById('appContainer').style.display = 'flex';
+            localStorage.setItem('hasSeenLanding', 'true');
+        }
+
         // Google Drive API Configuration
         const GOOGLE_CLIENT_ID = '793659536177-g3e47i0ckqsi7fvun2ntps35dr4h2is1.apps.googleusercontent.com';
         const GOOGLE_API_KEY = 'AIzaSyBk5AOK9D6t74DVymhOqC-RT53QYpdsjw0';
@@ -1077,12 +1084,6 @@
                 startApp();
             }
         });
-
-        function startApp() {
-            document.getElementById('landingPage').style.display = 'none';
-            document.getElementById('appContainer').style.display = 'flex';
-            localStorage.setItem('hasSeenLanding', 'true');
-        }
 
         function checkBrowserSupport() {
             if (!SpeechRecognition) {
